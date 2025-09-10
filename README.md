@@ -22,7 +22,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ├─ requirements.txt
 ├─ train.py
 ├─ model/
-│  └─ model.pt                 # trained PyTorch model
+│  └─ model.pt                 # pretrained model
 ├─ app/
 │  ├─ main.py                  # FastAPI app with /infer endpoint
 │  └─ utils.py                 # preprocessing/postprocessing helpers

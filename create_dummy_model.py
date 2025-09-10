@@ -1,5 +1,9 @@
 import torch
 import torch.nn as nn
+import os
+
+# Make sure model directory exists
+os.makedirs("model", exist_ok=True)
 
 # Define a simple model
 class GenericModel(nn.Module):
