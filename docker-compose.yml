@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  model-server:
+    build: .
+    container_name: model_server
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./model:/app/model   # keep model.pt outside the image for easy updates
+    restart: unless-stopped
